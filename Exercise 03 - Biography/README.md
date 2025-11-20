@@ -13,3 +13,22 @@ In this exercise, you'll create a program that stores and prints your name, home
 Have the user input their name, hometown, and age instead of hardcoding the values.
 Try giving both your first and second name when asked for your name. What happens? How can you handle multiple words in Python?
 Test the program by entering a string value for age (e.g., "twenty"). What happens? How can you prevent this issue?
+```python
+#Create an empty dictionary
+person = {}
+
+#Get user input
+person["name"] = input ("Enter your full name:")
+person ["hometown"] = input ("Enter your hometown:")
+
+#Trying to ensure age is entered as number
+while True: 
+    try: 
+        person["age"] = int(input("Enter your age:"))
+        break
+    except ValueError:
+        print("Please enter your age as a number (e.g.,20).")
+
+#Print the information
+print(f"\nName: {person['name']}\nHometown: {person['hometown']}\nAge: {person['age']}")
+

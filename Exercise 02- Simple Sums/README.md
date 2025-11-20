@@ -7,3 +7,9 @@ In this exercise, you will create and work with integer variables, perform arith
 2. Declare a second variable and initialize it with the integer value `10`.
 3. Declare a third variable that stores the sum of first two numbers.
 4. Print the value of the sum to the console.
+
+```python
+a = 8
+b = 10
+c = a + b
+print("The sum of two integers are:",c)
